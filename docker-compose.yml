@@ -9,10 +9,11 @@ x-healthcheck-defaults: &healthcheck_defaults
 services:
 
   webstack-go-service:
+    image: webstack-go:v1.0.0
     container_name: webstack-go-service
-    build:
-      context: ./
-      dockerfile: ./Dockerfile
+    #build:
+      #context: ./
+      #dockerfile: ./Dockerfile
     ports:
       - "9999:9999"
     volumes:
