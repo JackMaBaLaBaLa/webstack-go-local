@@ -9,6 +9,8 @@ a.编辑配置文件
 
 然后执行：
 
+cd webstack-go-local-main
+
 docker build -t webstack-go:v1.0.0 .
 
 b.导出镜像
@@ -20,3 +22,21 @@ c.导入镜像
 将webstack-go:v1.0.0.tar.gz导入待部署的内部环境
 
 docker load -i webstack-go:v1.0.0.tar.gz
+
+d.依次再导入redis和mysql镜像
+
+redis和mysql镜像可以在能连外网的机器上执行以下命令
+
+docker pull mysql/mysql-server:5.7
+
+docker pull redis:6.2.4
+
+按照以上方法导入内网环境即可
+
+### 2.运行
+
+修改webstack-go-local-main
+
+cd webstack-go-local-main
+
+docker-compose up -d
