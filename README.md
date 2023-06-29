@@ -35,7 +35,7 @@ docker pull redis:6.2.4
 
 ### 2.运行
 
-修改webstack-go-local-main
+修改docker-compose.yml-------->若有需要
 
 cd webstack-go-local-main
 
