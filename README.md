@@ -54,3 +54,10 @@ cd webstack-go-local-main
 docker-compose up -d #或者 docker-compose -f docker-compose.yml up -d
 ```
 
+### 3.访问
+
+http://ip:9999/install 进行项目初始化
+
+初始化完成后，可正常使用
+
+http://ip:9999
