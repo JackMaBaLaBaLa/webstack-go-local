@@ -23,10 +23,11 @@ b.导出镜像
 ```shell
 docker save -o webstack-go:v1.0.0.tar.gz webstack-go:v1.0.0
 ```
+将导出的镜像webstack-go:v1.0.0.tar.gz上传至要部署的内网机器
 
 c.导入镜像
 
-将webstack-go:v1.0.0.tar.gz导入待部署的内部环境
+到内网机器上，将webstack-go:v1.0.0.tar.gz导入待部署的内部docker环境
 
 ```shell
 docker load -i webstack-go:v1.0.0.tar.gz
