@@ -21,13 +21,13 @@
     maxopenconn = 10
 
   [mysql.read]
-    addr = "192.168.222.21:3306"
+    addr = "192.168.2.21:3306"
     name = "webstack-go"
     pass = "123456"
     user = "root"
 
   [mysql.write]
-    addr = "192.168.222.21:3306"
+    addr = "192.168.2.21:3306"
     name = "webstack-go"
     pass = "123456"
     user = "root"
